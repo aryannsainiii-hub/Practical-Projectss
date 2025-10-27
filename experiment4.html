@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <div style="border: 3px solid rgb(0, 0, 10); padding: 20px; width: 350px;">
+<body align ="center"><hr>
+
+  <h1>Hotel Room Booking Form</h1>
+  <form action="#" method="post" onsubmit="event.preventDefault(); alert('Form submitted (demo)');">
+    <div>
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" placeholder="Enter full name" required>
+    </div><br>
+
+    <div class="row">
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      </div><br>
+      <div>
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="9876543210" required>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div>
+        <label for="checkin">Check-in Date</label>
+        <input id="checkin" name="checkin" type="date" required>
+      </div><br>
+      <div>
+        <label for="checkout">Check-out Date</label>
+        <input id="checkout" name="checkout" type="date" required>
+      </div>
+    </div><br>
+
+    <div>
+      <label for="roomtype">Room Type</label>
+      <select id="roomtype" name="roomtype" required>
+        <option value="">-- Select --</option>
+        <option>Single</option>
+        <option>Double</option>
+        <option>triple</option>
+        <option>quarter</option>
+      </select>
+    </div><br>
+
+    <div>
+      <label for="guests">Guests</label>
+      <input id="guests" name="guests" type="number" min="1" max="10" value="1" required>
+    </div><br>
+
+    <div>
+      <label for="requests">Special Requests</label>
+      <textarea id="requests" name="requests" rows="4" placeholder="Any special requests (optional)"></textarea>
+    </div><br>
+
+    <div class="actions">
+      <button type="reset">Reset</button>
+      <button type="submit">Book Now</button>
+    </div><br>
+  </form><hr>
+  </div>
+</body>
+</html>
